@@ -20,11 +20,11 @@ export class MovieListComponent implements OnInit {
   }
 
   loadNewPage() {
-    this.movieService.getPeliculas(this.page).subscribe(resp => {
+    this.movieService.getPeliculasByPage(this.page).subscribe(resp => {
       this.movieList = resp.results;
 
     })
-    this.movieService.getPeliculas(this.page).subscribe(resp =>
+    this.movieService.getPeliculasByPage(this.page).subscribe(resp =>
       this.count = resp.total_results);
   }
 
