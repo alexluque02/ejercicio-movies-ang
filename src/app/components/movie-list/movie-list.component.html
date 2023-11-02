@@ -1,0 +1,3 @@
+<ngb-pagination [maxSize]="5" [boundaryLinks]="true" [collectionSize]="count" [(page)]="page" [pageSize]="20"
+    (pageChange)="loadNewPage()" aria-label="Default pagination"></ngb-pagination>
+<div class="row"><app-movie-item class="col-3" *ngFor="let movie of movieList" [movie]="movie"></app-movie-item></div>
