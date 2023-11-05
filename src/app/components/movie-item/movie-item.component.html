@@ -1,11 +1,7 @@
-<div class="card" style="width: 18rem;">
+<a class="card" style="width: 18rem;" [routerLink]="['/pelicula', movie.id]">
     <img [src]="getImageItem()" class="card-img-top" alt="...">
     <div class="card-body">
         <h5 class="card-title">{{movie.original_title}}</h5>
         <p class="card-body">{{movie.original_language}}</p>
     </div>
-    <div class="card-footer">
-        <button class="btn btn-primary" [routerLink]="['/pelicula', movie.id]">Ver
-            más</button>
-    </div>
-</div>
+</a>

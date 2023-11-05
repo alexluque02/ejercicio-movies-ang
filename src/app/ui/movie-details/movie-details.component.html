@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="getImageItem()" alt="{{selectedMovie.original_title}}">
+        </div>
+        <div class="col-md-6">
+            <h2>{{selectedMovie.original_title}}</h2>
+            <p>Release Date: {{selectedMovie.release_date}}</p>
+            <p>Overview: {{selectedMovie.overview}}</p>
+            <p>Popularity: {{selectedMovie.popularity}}</p>
+            <p>Vote Average: {{selectedMovie.vote_average}}</p>
+        </div>
+    </div>
+</div>

@@ -9,9 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DetailsMovieComponent } from './details-movie/details-movie.component';
 import { PageNotFoundComponent } from './ui/page-not-found/page-not-found.component';
 import { RouterModule } from '@angular/router';
+import { MovieDetailsComponent } from './ui/movie-details/movie-details.component';
 
 
 @NgModule({
@@ -21,8 +21,8 @@ import { RouterModule } from '@angular/router';
     MovieItemComponent,
     PageHomeComponent,
     NavbarComponent,
-    DetailsMovieComponent,
     PageNotFoundComponent,
+    MovieDetailsComponent,
   ],
   imports: [
     BrowserModule,
